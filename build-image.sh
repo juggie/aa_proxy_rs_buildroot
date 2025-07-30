@@ -15,7 +15,7 @@ else
   BUILDROOT_DIR=/app/buildroot
   OUTPUT=${BUILDROOT_DIR}/output/${ARG}
 
-  mkdir p ${OUTPUT}
+  mkdir -p ${OUTPUT}
   cd ${BUILDROOT_DIR}
   make BR2_EXTERNAL=../external/ O=${OUTPUT} ${ARG}_defconfig
   cd ${OUTPUT}
